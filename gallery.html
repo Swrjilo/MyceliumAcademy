@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang='en'>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="School website with Corner hub, notices, gallery, academics and admissions.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+
+<title>gallery - Your School</title>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Go to homepage">
+      <img src="assets/img/logo.svg" alt="School Logo"><span>Your School</span>
+    </a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="corner.html">Corner</a>
+      <a href="notices.html">Notices</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="admissions.html">Apply Now</a></div>
+    <button class="burger" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+
+<main class="container section">
+  <h1>Photo Gallery</h1>
+  <div class="tools">
+    <select id="gal-cat">
+      <option value="all">All</option>
+      <option value="events">Events</option>
+      <option value="sports">Sports</option>
+      <option value="campus">Campus</option>
+    </select>
+  </div>
+  <div class="grid" id="gal">
+    <figure class="card" data-cat="events"><a data-lightbox href="https://picsum.photos/id/1050/1200/900"><img src="https://picsum.photos/id/1050/600/450" alt="Event"></a></figure>
+    <figure class="card" data-cat="sports"><a data-lightbox href="https://picsum.photos/id/1011/1200/900"><img src="https://picsum.photos/id/1011/600/450" alt="Sports"></a></figure>
+    <figure class="card" data-cat="campus"><a data-lightbox href="https://picsum.photos/id/1069/1200/900"><img src="https://picsum.photos/id/1069/600/450" alt="Campus"></a></figure>
+    <figure class="card" data-cat="events"><a data-lightbox href="https://picsum.photos/id/1005/1200/900"><img src="https://picsum.photos/id/1005/600/450" alt="Event"></a></figure>
+    <figure class="card" data-cat="sports"><a data-lightbox href="https://picsum.photos/id/1025/1200/900"><img src="https://picsum.photos/id/1025/600/450" alt="Sports"></a></figure>
+    <figure class="card" data-cat="campus"><a data-lightbox href="https://picsum.photos/id/1040/1200/900"><img src="https://picsum.photos/id/1040/600/450" alt="Campus"></a></figure>
+  </div>
+  <script>
+    const sel=document.getElementById('gal-cat'); const nodes=[...document.querySelectorAll('#gal .card')];
+    sel.addEventListener('change',()=>{ const v=sel.value; nodes.forEach(n=>{ n.style.display=(v==='all'||n.dataset.cat===v)?'':'none'; }); });
+  </script>
+</main>
+
+
+<footer>
+  <div class="container">
+    <p>&copy; <span data-year></span> Your School Name. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

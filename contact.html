@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang='en'>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="School website with Corner hub, notices, gallery, academics and admissions.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+
+<title>contact - Your School</title>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Go to homepage">
+      <img src="assets/img/logo.svg" alt="School Logo"><span>Your School</span>
+    </a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="corner.html">Corner</a>
+      <a href="notices.html">Notices</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="admissions.html">Apply Now</a></div>
+    <button class="burger" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+
+<main class="container section">
+  <h1>Contact Us</h1>
+  <div class="grid">
+    <div class="card" style="grid-column:span 6">
+      <h3>Get in touch</h3>
+      <form onsubmit="event.preventDefault(); alert('Message sent! (Demo)');">
+        <label>Name<br><input required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px"></label><br><br>
+        <label>Email<br><input type="email" required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px"></label><br><br>
+        <label>Message<br><textarea required rows="5" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px"></textarea></label><br><br>
+        <button class="nav-cta" type="submit"><span style="padding:10px 14px;display:inline-block;background:var(--brand);color:#fff;border-radius:12px;font-weight:700">Send</span></button>
+      </form>
+    </div>
+    <div class="card" style="grid-column:span 6">
+      <h3>Address</h3>
+      <p>Numaligarh, Golaghat, Assam – 785615</p>
+      <h3>Phone</h3>
+      <p>+91‑XXXXXXXXXX</p>
+      <h3>Email</h3>
+      <p>info@yourschool.edu.in</p>
+      <h3>Office Hours</h3>
+      <p>Mon–Fri: 8:00–16:00</p>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <div class="container">
+    <p>&copy; <span data-year></span> Your School Name. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

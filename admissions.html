@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="School website with Corner hub, notices, gallery, academics and admissions.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <title>Admissions - Your School</title>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Go to homepage">
+      <img src="assets/img/logo.svg" alt="School Logo"><span>Your School</span>
+    </a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="corner.html">Corner</a>
+      <a href="notices.html">Notices</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="admissions.html">Apply Now</a></div>
+    <button class="burger" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main class="container section">
+  <h1>Admissions 2025–26</h1>
+  <div class="grid">
+    <div class="card" style="grid-column:span 8">
+      <h3>How to Apply</h3>
+      <ol>
+        <li>Read the Prospectus.</li>
+        <li>Fill the online application form.</li>
+        <li>Upload documents and submit.</li>
+      </ol>
+      <p><a href="assets/docs/admission-prospectus.pdf" download>Download Prospectus (PDF)</a></p>
+
+      <h3>Online Application</h3>
+      <!-- ✅ Formspree integration -->
+      <form action="https://formspree.io/f/xwpnaqlp" method="POST">
+        <div class="grid">
+          <label class="card" style="grid-column:span 6">
+            Student Name<br>
+            <input name="studentName" required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px">
+          </label>
+
+          <label class="card" style="grid-column:span 6">
+            Class Applying For<br>
+            <select name="class" required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px">
+              <option>Nursery</option>
+              <option>KG</option>
+              <option>Class I</option>
+              <option>Class XI</option>
+            </select>
+          </label>
+
+          <label class="card" style="grid-column:span 6">
+            Email<br>
+            <input type="email" name="email" required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px">
+          </label>
+
+          <label class="card" style="grid-column:span 6">
+            Phone<br>
+            <input type="tel" name="phone" required style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px">
+          </label>
+        </div>
+
+        <!-- Optional: redirect to a thank-you page after submission -->
+        <input type="hidden" name="_redirect" value="https://yourusername.github.io/yourrepo/thankyou.html">
+
+        <p>
+          <button class="nav-cta" type="submit">
+            <span style="padding:10px 14px;display:inline-block;background:var(--brand);color:#fff;border-radius:12px;font-weight:700">
+              Submit Application
+            </span>
+          </button>
+        </p>
+      </form>
+    </div>
+
+    <div class="card" style="grid-column:span 4">
+      <h3>Key Documents</h3>
+      <ul>
+        <li><a href="assets/docs/fee-structure-2025.pdf" download>Fee Structure 2025</a></li>
+        <li><a href="assets/docs/holiday-list-2025.pdf" download>Holiday List 2025</a></li>
+      </ul>
+      <h3>Important Dates</h3>
+      <p>Applications open: 2025-10-01<br>Entrance: 2025-11-10</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span data-year></span> Your School Name. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

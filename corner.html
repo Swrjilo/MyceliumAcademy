@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang='en'>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="School website with Corner hub, notices, gallery, academics and admissions.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+
+<title>corner - Your School</title>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Go to homepage">
+      <img src="assets/img/logo.svg" alt="School Logo"><span>Your School</span>
+    </a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="corner.html">Corner</a>
+      <a href="notices.html">Notices</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="admissions.html">Apply Now</a></div>
+    <button class="burger" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+
+<main class="container section">
+  <h1>Corner</h1>
+  <div class="tabbar" role="tablist">
+    <button data-tab="students" class="active" role="tab" onclick="setActiveTab('students')">Students</button>
+    <button data-tab="parents" role="tab" onclick="setActiveTab('parents')">Parents</button>
+    <button data-tab="teachers" role="tab" onclick="setActiveTab('teachers')">Teachers</button>
+  </div>
+
+  <div id="notice-wrap" class="tools">
+    <input type="search" placeholder="Search…">
+    <select>
+      <option value="all">All</option>
+      <option value="notice">Notice</option>
+      <option value="circular">Circular</option>
+      <option value="download">Download</option>
+      <option value="event">Event</option>
+    </select>
+  </div>
+
+  <section data-panel="students">
+    <h2>Students' Corner</h2>
+    <div class="list">
+      <article class="item" data-cat="notice"><h3>Unit Test Schedule – VI–VIII</h3><p class="meta">2025‑08‑28 · Notice</p></article>
+      <article class="item" data-cat="download"><h3>Syllabus Term‑I</h3><p class="meta">2025‑07‑20 · Download</p><p><a href="assets/docs/holiday-list-2025.pdf" download>Download PDF</a></p></article>
+      <article class="item" data-cat="event">
+        <h3>Science Exhibition Winners</h3><p class="meta">2025‑09‑01 · Event <span class="badge">New</span></p>
+        <div class="grid">
+          <figure class="card" style="grid-column:span 4"><a data-lightbox href="https://picsum.photos/id/1025/1200/900"><img src="https://picsum.photos/id/1025/600/450" alt="Exhibit"></a></figure>
+          <figure class="card" style="grid-column:span 4"><a data-lightbox href="https://picsum.photos/id/1011/1200/900"><img src="https://picsum.photos/id/1011/600/450" alt="Exhibit"></a></figure>
+          <figure class="card" style="grid-column:span 4"><a data-lightbox href="https://picsum.photos/id/1005/1200/900"><img src="https://picsum.photos/id/1005/600/450" alt="Exhibit"></a></figure>
+        </div>
+      </article>
+    </div>
+    <div class="pagination"><button class="prev">Prev</button><span class="page-info">Page 1 / 1</span><button class="next">Next</button></div>
+  </section>
+
+  <section data-panel="parents" hidden>
+    <h2>Parents' Corner</h2>
+    <div class="list">
+      <article class="item" data-cat="circular"><h3>PTM Timings</h3><p class="meta">2025‑09‑04 · Circular</p></article>
+      <article class="item" data-cat="notice"><h3>Quarterly Fee Window</h3><p class="meta">2025‑09‑01 · Notice</p></article>
+    </div>
+    <div class="pagination"><button class="prev">Prev</button><span class="page-info">Page 1 / 1</span><button class="next">Next</button></div>
+  </section>
+
+  <section data-panel="teachers" hidden>
+    <h2>Teachers' Corner</h2>
+    <div class="list">
+      <article class="item" data-cat="download"><h3>Lesson Plan Template</h3><p class="meta">2025‑05‑07 · Download</p><p><a href="#" onclick="alert('Attach your DOCX template')">Download</a></p></article>
+      <article class="item" data-cat="circular"><h3>Academic Planner 2025–26</h3><p class="meta">2025‑04‑10 · Circular</p></article>
+    </div>
+    <div class="pagination"><button class="prev">Prev</button><span class="page-info">Page 1 / 1</span><button class="next">Next</button></div>
+  </section>
+</main>
+
+
+<footer>
+  <div class="container">
+    <p>&copy; <span data-year></span> Your School Name. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
